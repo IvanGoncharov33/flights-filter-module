@@ -11,7 +11,7 @@ public class FilterFlight implements Filter<Flight> {
     /**
      * {@inheritDoc}
      */
-    public List<Flight> filtration(List<Flight> flightsList, Predicate<Flight> filteringRule) {
-        return flightsList.stream().filter(filteringRule).collect(Collectors.toList());
+    public List<Flight> filtration(List<Flight> flightsList, Predicate<Flight> filterRule) {
+        return flightsList.stream().filter(filterRule).collect(Collectors.toList());
     }
 }

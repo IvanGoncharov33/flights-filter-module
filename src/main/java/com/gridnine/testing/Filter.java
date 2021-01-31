@@ -12,8 +12,8 @@ public interface Filter<T> {
      /**
       *Filtration method
       * @param list List with the elements which must be filtered.
-      * @param filteringRule Predicate with the rule by which filtering must be done.
+      * @param filterRule Predicate with the rule by which filtering must be done.
       * @return Filtered list of elements.
       */
-     List<T> filtration(List<T> list, Predicate<T> filteringRule);
+     List<T> filtration(List<T> list, Predicate<T> filterRule);
 }
